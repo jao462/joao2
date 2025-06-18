@@ -1,32 +1,13 @@
 programa {
-  inclua biblioteca Tipos --> m
   funcao inicio() {
-    
-    real num, verif
+    inteiro batata, batata2 , batata3
 
-    escreva("leia um numero\n")
-    leia(num)
+    escreva("ano atual\n")
+    leia(batata)
+    escreva("ano que nasceu\n")
+    leia(batata2)
 
-    se(num < 0){
-        escreva("\nNumero ", num, " = Negativo")
-    }
-    senao{
-      escreva("\nNumero ", num, " = Positivo")
-    }
-
-    se(num % 2 == 0){
-        escreva("\nNumero ", num," par")
-    }
-      senao{
-        escreva("\nNumero", num," impar")
-      }
-      verif = m.real_para_inteiro(num)
-
-                    se (verif - num == 0) {
-                        escreva("\n",num, " = Inteiro\n")
-                    } senao {
-                        escreva("\n",num, " = Fracionado\n")
-                    }
+    batata3 = batata - batata2
+    escreva("\nidade = ",batata3)
   }
 }
-
